@@ -25,6 +25,14 @@ export default function Component() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <div className="flex items-center justify-between">
+        <p className="text-gray-500 mb-7">
+          Home &gt; Women &gt; Cotton jersey top
+        </p>
+        <p>
+          &lt; <i className="bx bx-category"></i> &gt;
+        </p>
+      </div>
       <div className="flex flex-col md:flex-row gap-8">
         <Gallery product={product} />
         <div className="md:w-1/2">
