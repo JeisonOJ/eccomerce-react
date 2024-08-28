@@ -12,7 +12,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="flex items-center flex-col p-4 border-b border-gray-200">
+    <header className="flex items-center flex-col p-4 border-gray-200">
       <div className="flex items-center justify-between w-full">
         <Dropdown2 />
         <h1 className="text-2xl font-bold w-1/3 text-center">Ecomus</h1>
