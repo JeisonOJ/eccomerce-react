@@ -3,15 +3,17 @@ import Image from "next/image";
 export default function ProductsList() {
   return (
     <section className="p-8">
-      <div className="flex justify-between items-center mb-6">
-        <h3 className="text-2xl font-bold">Best seller</h3>
+      <div className="flex justify-center items-center mb-6">
         <div>
-          <button className="mr-2 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
+          <a href="#" className="mr-2 px-4 py-2">
+            Best seller
+          </a>
+          <a href="#" className="mr-2 px-4 py-2">
             New arrivals
-          </button>
-          <button className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">
+          </a>
+          <a href="#" className="px-4 py-2">
             On Sale
-          </button>
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -26,10 +28,14 @@ export default function ProductsList() {
             />
             <h4 className="font-bold mb-2">Product Name</h4>
             <p className="text-gray-600">$99.99</p>
+            <div className="mt-4 flex gap-2">
+              <button className="w-8 h-8 rounded-full border-2 border-gray-300 bg-[#f4a020]"></button>
+              <button className="w-8 h-8 rounded-full border-2 border-gray-300 bg-black"></button>
+            </div>
           </div>
         ))}
       </div>
-      <button className="block mx-auto mt-8 px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">
+      <button className="block mx-auto mt-8 px-6 py-2 border border-gray-900 rounded hover:bg-gray-100 font-bold">
         Load more
       </button>
     </section>

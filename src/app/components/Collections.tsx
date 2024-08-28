@@ -12,10 +12,11 @@ export default function Collections() {
                   src="https://images.asos-media.com/products/gorra-en-tonos-blanco-hueso-con-logo-de-los-ny-yankees-9forty-de-new-era/23339923-1-offwhite?$n_320w$&wid=317&fit=constrain"
                   alt={category}
                   className=" rounded-full mx-auto mb-2"
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                 />
-                <p>{category}</p>
+                <p className="text-lg font-bold">{category}</p>
+                <p>10 items</p>
               </div>
             )
           )}
