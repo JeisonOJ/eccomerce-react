@@ -12,6 +12,7 @@ export default function Gallery({ product }: { product: Product }) {
             alt={`${product.name} ${index + 1}`}
             width={78}
             height={70}
+            className={index === 0 ? 'border-2 border-black' : ''}
           />
         ))}
       </div>
