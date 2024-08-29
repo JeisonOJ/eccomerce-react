@@ -1,6 +1,6 @@
 export default function PolicyPage() {
     return (
-      <div className="w-full max-w-4xl mx-auto p-6 bg-white">
+      <div className="w-full mt-6 mx-auto p-6 bg-white">
         <nav className="border-b border-gray-200">
           <ul className="flex space-x-8">
             <li className="pb-2 border-b-2 border-black">

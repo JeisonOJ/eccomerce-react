@@ -25,16 +25,18 @@ export default function PaymentOptions({ product }: { product: Product }) {
         </div>
       </div>
       <div>
-        <button className="w-full bg-black text-white py-3 mb-4">
-          Add to cart - ${(product.price * quantity).toFixed(2)}
-        </button>
-        <div className="flex justify-between items-center mb-4">
-          <button className="flex items-center gap-2">
-            <div className="h-5 w-5">Share</div>
+        <div className="flex items-center w-full mb-2 gap-4">
+          <button className=" w-[80%] bg-black text-white py-3 ">
+            Add to cart - ${(product.price * quantity).toFixed(2)}
           </button>
-          <button className="flex items-center gap-2">
-            <div className="h-5 w-5">Add to wishlist</div>
-          </button>
+          <div className="flex gap-4 w-[20%] py-3 text-2xl">
+            <button className="w-1/2 text-2xl border p-2">
+              <i className="bx bx-heart text-2xl"></i>
+            </button>
+            <button className="w-1/2 text-2xl border p-2">
+              <i className="bx bx-share-alt text-2xl"></i>
+            </button>
+          </div>
         </div>
       </div>
       <button className="w-full bg-yellow-400 text-black py-3 mb-4">

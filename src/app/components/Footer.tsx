@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Dropdown2 from "./Dropdown2";
 
 export default function Footer() {
@@ -5,7 +6,9 @@ export default function Footer() {
     <footer className="bg-gray-100 p-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <h4 className="text-xl font-bold mb-4">Ecomus</h4>
+          <h4 className="text-xl font-bold mb-4">
+            <Image src="/logo.svg" width={100} height={100} alt="logo"></Image>
+          </h4>
           <p className="mb-2">Address: 123 Fashion Street, Style City 12345</p>
           <p className="mb-2">Phone: (123) 456-7890</p>
           <p className="mb-2">Email: info@ecomus.com</p>

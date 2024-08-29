@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Dropdown2 from "./Dropdown2";
+import Image from "next/image";
 
 export default function Header() {
   const links = [
@@ -15,7 +16,9 @@ export default function Header() {
     <header className="flex items-center flex-col p-4 border-gray-200">
       <div className="flex items-center justify-between w-full">
         <Dropdown2 />
-        <h1 className="text-2xl font-bold w-1/3 text-center">Ecomus</h1>
+        <h1 className="text-2xl font-bold w-1/3 flex justify-center">
+        <Image src="/logo.svg" width={100} height={100} alt="logo" />
+        </h1>
         <div className="flex items-center w-1/3 justify-end gap-5">
           <Link href="#">
             <i className="bx bx-search-alt-2"></i>
